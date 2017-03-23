@@ -1,1 +1,1 @@
-<H1>Repository for Python exercices</H1>
+<H2>Repository for Python exercices</H2>
