@@ -3,8 +3,8 @@ n1 = []
 want = "y"
 i = 0
 while want == "y":
-    n.append(int(input("Write a number : ")))
-    want = input("You want write more numbers ? ")
+    n.append(int(input("Enter a number : ")))
+    want = input("Do you want to add more numbers ? ")
 print("Original Sequence: ")
 print(n)
 OrigVectorSize = len(n)
