@@ -1,7 +1,26 @@
-p = True
-q = True
-r = True
-
+deseja = input("Deseja imprimir a tabela com todos os valores ?(V/F)")
+if deseja == "V":
+    p = True
+    q = True
+    r = True
+    ii = 9
+else:
+    p = input("Digite o valor de P: ( V/F)")
+    if p == "V" :
+        p = True
+    else:
+        p = False
+    q = input("Digite o valor de Q: ( V/F)")
+    if q == "V" :
+        q = True
+    else:
+        q = False
+    r = input("Digite o valor de R: ( V/F)")
+    if r == "V" :
+        r = True
+    else:
+        r = False
+    ii = 2
 # Função contendo toda a logica
 def calculo_expre(p, q, r):
     # (q ^ r)
@@ -63,7 +82,7 @@ print("|   p   |   q   |   r   | ( q ^ r ) | p v ( q ^ r ) | ( p v q ) | ( p v r
 
 # Loop que monta a tabela
 i = 1
-while i < 9:
+while i < ii:
     if i == 2:
         q = False
         r = False
@@ -83,4 +102,3 @@ while i < 9:
     vt = calculo_expre(p, q, r)
     imprimir_tela(vt)
     i += 1
-
