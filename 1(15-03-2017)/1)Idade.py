@@ -5,7 +5,7 @@ data = input("Diga sua data de nascimento")
 datahj = date.today()
 vetor_data = data.split("/")
 anos = datahj.year - int(vetor_data[2]);
-
+print(vetor_data)
 #Calculo da IDADE
 if int(vetor_data[1]) <= datahj.month :
     if int(vetor_data[1]) == datahj.month:
